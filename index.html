@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Corben:700" rel="stylesheet">
+  
+  <title>W NISSY no portfolio</title>
+</head>
+<body>
+  <!--ヘッダーの表示-->
+  <header id="header">
+    <h1 class="header_title">W.NISSY NO <br> PORTFOLIO</h1>
+    
+
+  </header>
+
+  <body>
+    <!--メニューボタン-->
+    <nav>
+      <a href="#profile_junp">PROFILE</a>
+      <a href="#skill_junp">SKILLS</a>
+      <a href="#work_junp">WORKS</a>
+      <a href="#contact_junp">CONNECT</a>
+      <div class="animation start-home"></div>
+    </nav>
+
+    <!--PROFILE-->
+    <section class="effect-fade">
+    <h2 class="profile_midasi" id="profile_junp">PROFILE</h2>
+    <div class="writer-profile">
+      <div class="wp-left">
+          <div class="wp-label"><p>このサイトを作った人</p></div>
+          <div class="wp-img"><img src="images/IMG_3346.JPG" alt="icon_profile"></div>
+          <p class="wp-name">W.NISSY</p>
+          <p class="wp-job">金融系システムインテグレーター勤務</p></div>
+      <div class="wp-right">
+      <div class="wp-content">
+          <p>初めまして。W.NISSYです。<br>
+            現在は金融系システムインテグレーターで<br>
+            VB.NETを用いたアプリケーションの開発・保守に従事しております。<br>
+            大学時代は経済学部で、システム開発に触れる機会はありませんでしたが、<br>
+            入社後から現在まで日々スキルアップのため自己研鑽に努めております。<br>
+            趣味はキャンプ、ディズニー、サッカー、写真を撮ることです。<br>
+            ヘッダー写真も自身で撮影しました。</p></div>
+      </div>
+  </div>
+</section>
+
+
+    <section id="skills" class="effect-fade">
+    <h2 id="skill_junp">SKILLS</h2>
+    <p>＊業務経験</p>
+    
+    <div class="box1">
+      <h3><i class="fab fa-grav"></i>デザイン・コーディング</h3>
+      <table>
+        <tr>
+          <th>技術</th>
+          <th>経験年数</th>
+          <th>スキルレベル</th>
+        </tr>
+
+        <tr>
+          <td>HTML</td>
+          <td>2ヶ月</td>
+          <td>★★☆☆☆</td>
+        </tr>
+
+        <tr>
+          <td>CSS</td>
+          <td>2ヶ月</td>
+          <td>★★☆☆☆</td>
+        </tr>
+
+        <tr>
+          <td>JavaScript</td>
+          <td>2ヶ月</td>
+          <td>★★☆☆☆</td>
+        </tr>
+      </table>
+
+    </div>
+
+
+      <div class="boxlist">
+      <div class="box2">
+        <h3><i class="fas fa-laptop-code"></i>開発言語</h3>
+        <ul>
+          <li>＊VB/VB.NET（2.5年）</li>
+          <li>Java（0.5年）</li>
+          <li>Python（0.5年）</li>
+        </ul>
+      </div>
+
+      <div class="box3">
+        <h3><i class="fas fa-database far-fw"></i>データベース</h3>
+        <ul>
+          <li>＊SQL Server（2.5年）</li>
+          <li>＊Oracle（1年）</li>
+          <li>＊DB2（2.0年）</li>
+        </ul>
+      </div>
+
+      <div class="box4">
+        <h3><i class="fas fa-book"></i>保有資格</h3>
+        <ul>
+          <li>基本情報技術者</li>
+          <li>AWS Certified Cloud Practitioner</li>
+          <li>ファイナンシャルプランナー3級</li>
+        </ul>
+      </div>
+
+      <div class="box5">
+        <h3><i class="fas fa-chalkboard-teacher"></i>その他</h3>
+        <ul>
+          <li>＊JP1</li>
+          <li>linux（学習中）</li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="works" class="effect-fade">
+    
+     
+    <h2 id="work_junp">WORKS</h2>
+      <div>
+        <a href="#"> <!--ここにGithubのURL-->
+          <img src="images/portfolio_photo.png" alt="portfolio_image" width="100%">
+        </a>
+        <h3>MY PORTFOLIO</h3>
+        <p>本サイトとなります。HTML、CSS、Jqueryを用いてシンプルに仕上げました。</p>
+      </div>
+
+    
+
+  </section>
+
+    <section id="contact">
+      <h2 id="contact_junp">CONTACT</h2>
+      <p>お気軽に返信やDMでご連絡ください。</p>
+      <a rel="noopener" href="https://twitter.com/wasan6_95" target="_blank" class="aioseop-link">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+    </section>
+
+  </body>
+
+  <footer>
+    <small>&copy; W.NISSY</small>
+  </footer>
+
+<script src="js/jquery-min.js"></script>
+
+<script>
+$(function () {
+  $(window).scroll(function () {
+    $(".effect-fade").each(function () {
+      var elemPos = $(this).offset().top; /* 要素の位置を取得 */
+      var scroll = $(window).scrollTop(); /* スクロール位置を取得 */
+      var windowHeight = $(window).height(); /* 画面幅を取得 */
+      if (scroll > elemPos - windowHeight) {
+        /* 要素位置までスクロール出来たときに動作する */
+        $(this).addClass("effect-scroll");
+      }
+    });
+  });
+  jQuery(window).scroll();
+});
+</script>
+
+</body>
+</html>

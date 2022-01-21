@@ -21,7 +21,7 @@ h2 {
 /* ヘッダーの調整・写真組み込み */
 #header {
   margin-top: 0px;
-  width: 100vw;
+  width: 100%;
   height: 95vh;
   background-image: url(../images/IMG_1231.JPG);
   background-size: cover;

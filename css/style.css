@@ -1,0 +1,384 @@
+/* cssリセット */
+
+
+/* 共通 */
+body {
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Corben', cursive;
+  text-align: center;
+}
+
+
+/* ヘッダーの調整・写真組み込み */
+#header {
+  margin-top: 0px;
+  width: 100vw;
+  height: 95vh;
+  background-image: url(../images/IMG_1231.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px;
+}
+
+header {
+  display: flex;
+}
+
+.header_title {
+  font-family: 'Caveat', cursive;
+  position: absolute;
+  line-height: 1em;
+  margin-top: 0;
+  left: 45vh;
+  top: 25vh;
+  font-size: 10em;
+  color: #ffffff;
+  
+}
+
+/* メニューボタン */
+nav {
+  margin: 27px auto 0;
+
+  position: relative;
+  width: 472px;
+  height: 50px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+  width: 160px;
+  left: 310px;
+  background-color: #9b59b6;
+}
+
+span {
+    color: #2BD6B4;
+}
+
+
+
+/* この記事を書いた人 */
+
+h2.profile_midasi{
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+/* カード全体 */
+.writer-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+/* カードの右・左共通 */
+.wp-left, .wp-right {
+  padding: 50px 30px;
+}
+/* カードの左側 */
+.wp-left {
+  width: 40%;
+  text-align: center;
+}
+/* カードの右側 */
+.wp-right {
+  width: 60%;
+}
+
+
+/* 左側 */
+
+/* 吹き出し */
+.wp-label {
+  position: relative;
+  margin: 0 0 15px;
+  padding: 10px 15px;
+  border: 1px solid #222;
+  display: inline-block;
+  min-width: 120px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+/* 三角 */
+.wp-label::before,
+.wp-label::after {
+  content: '';
+  border: 14px solid transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -14px;
+}
+/* 線 */
+.wp-label::before {
+  border-top-color: #222;
+  bottom: -28px;
+}
+/* 地 */
+.wp-label::after {
+  border-top-color: #fff;
+  bottom: -27px;
+}
+/* 吹き出し内のテキスト */
+.wp-label p {
+  color: #222;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* 画像 */
+.wp-img img {
+  width: 250px;
+  height: 250px;
+  margin: 10px auto;
+}
+/* 画像を丸く、枠線をつける */
+.wp-img img {
+  border-radius: 50%;
+  border: 2px solid #eee;
+}
+/* 名前 */
+.wp-name {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: black;
+  margin-bottom: 5px;
+}
+/* 職業 */
+.wp-job {
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* 右側 */
+
+/* 文章を左揃え・中央寄せに */
+.wp-content {
+  text-align: center;
+  display: block;
+}
+/* 文章 */
+.wp-content p {
+  text-align: left;
+  display: inline-block;
+  color: #222;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+
+
+/* SKILLS*/
+
+#skills h2 {
+  margin-top: 150px;
+}
+
+#skills p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  text-align: center;
+}
+
+.boxlist {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 22%);
+}
+
+.box1 {
+  border: solid 3px gray;
+  width: 80%;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 22%);
+}
+
+.box1 table {
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.box1 tr {
+  width: 80%;
+  
+}
+
+
+
+.box2 {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 22%);
+}
+
+.box3 {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 22%);
+}
+
+.box4 {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 22%);
+}
+
+.box5 {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 22%);
+}
+
+
+.boxlist ul {
+  list-style-type:none;
+  text-align: left;
+}
+
+.boxlist li {
+	position:relative;
+	padding: 0em 0.3em 0.3em 1.3em;
+}
+.boxlist li:before {
+	position:absolute;
+	content:'';
+	top: 0.5em;
+	left: 0.2em;
+	height:0;
+	width:0;
+	border-style: solid;
+	border-width: 6px 0 6px 9px;
+	border-color: transparent transparent transparent black;
+}
+
+/* WORKS */
+#works {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+
+
+#works div {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid 3px gray;
+  width: 50%;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 22%);
+}
+
+#works div p {
+  margin: 0; 
+  padding: 0;
+}
+
+#works div h3 {
+  text-decoration: underline;
+}
+
+/* contact */
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  margin-top: 150px;
+}
+
+
+.fa-twitter {
+  color: blue;
+  
+}
+
+/* フッター */
+footer {
+  
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+/* ふわっと表示させる用 */
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 10px); /* フェードインで動く高さを指定 */
+  transition: all 1000ms; /* フェードインにかかる時間を指定 */
+}
+.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+}
